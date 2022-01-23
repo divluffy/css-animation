@@ -1,14 +1,13 @@
-# hi
-
-
-
+# What is css animation?
+### CSS animations is a proposed module for Cascading Style Sheets that allows the animation of HTML document elements using CSS.
 
 
 ### The animation property is a shorthand property for:
 
 - animation-name
->	Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector
-
+```
+Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector
+```
 
 - animation-duration
 >	Specifies how many seconds or milliseconds an animation takes to complete
