@@ -5,12 +5,11 @@
 ### The animation property is a shorthand property for:
 
 
-| property     | description |
-|animation-name|Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector|
-|animation-duration|Specifies how many seconds or milliseconds an animation takes to complete|
-|||
-|||
-
+| Property        | Description     | 
+| ------------- |:-------------:|
+| animation-name      | Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector | 
+| animation-duration     | Specifies how many seconds or milliseconds an animation takes to complete      |  
+| zebra stripes | are neat      |   
 
 - animation-timing-function
 > Specifies the speed curve of the animation
