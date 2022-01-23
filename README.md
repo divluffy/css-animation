@@ -42,7 +42,7 @@ The @keyframes controls the intermediate steps in a CSS animation sequence by de
 
 Example: 
 If use from and to.
-```
+```css
 @keyframes nameAnimation {
   from {
     transform: translateX(0%);
@@ -52,36 +52,37 @@ If use from and to.
     transform: translateX(100%);
   }
 }
-```css
+```
 
 If you use percentages from 0% to 100%
-```
+```css
 @keyframes nameAnimation {
   0% { top: 0; }
   50% { top: 30px; left: 20px; }
   50% { top: 10px; }
   100% { top: 0; }
 }
-```css
+```
 
-Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+Specify when the style change will happen in percent, or with the keywords "from" and "to",
+which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the
+animation is complete.
 
 #### Also we can use from and to with percentage like
 
-```
+```css
 @keyframes myexample {
   from {top: 0px;}
   50%  {top: 100px !important;} /* ignored */
   to   {top: 200px;}
 }
-```css
+```
 
 >> The !important rule is ignored in a keyframe
 - hi
 > The !important rule is ignored in a keyframe
 
 - hi
-
-// hohihi
+<!--  hohihi -->
 
 
