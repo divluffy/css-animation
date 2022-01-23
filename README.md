@@ -4,13 +4,12 @@
 
 ### The animation property is a shorthand property for:
 
-- animation-name
-```
-Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector
-```
 
-- animation-duration
->	Specifies how many seconds or milliseconds an animation takes to complete
+| property     | description |
+|animation-name|Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector|
+|animation-duration|Specifies how many seconds or milliseconds an animation takes to complete|
+|||
+|||
 
 
 - animation-timing-function
