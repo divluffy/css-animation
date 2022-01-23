@@ -1,5 +1,3 @@
-# all
-
 # CSS Transitions
 
 
