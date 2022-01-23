@@ -7,6 +7,7 @@
 ### The animation property is a shorthand property for:
 
 - animation-name
+>	Specifies the name of the keyframe you want to bind to the selector Specifies the name of the keyframe you want to bind to the selector
 - animation-duration
 - animation-timing-function
 - animation-delay
@@ -18,7 +19,6 @@
 #### whats mean this property?
 
 
-animation-name	Specifies the name of the keyframe you want to bind to the selector
 animation-duration	Specifies how many seconds or milliseconds an animation takes to complete
 animation-timing-function	Specifies the speed curve of the animation
 animation-delay	Specifies a delay before the animation will start
@@ -32,11 +32,14 @@ animation-play-state	Specifies whether the animation is running or paused
 animation: name duration timing-function delay iteration-count direction fill-mode;
 
 Example: 
+```css
 animation: nameAnimation 0.5s ease-in-out;
+```
 
 
 #### And when we use animation then we use keyframes with it
 #### what keyframes?
+
 
 The @keyframes controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. This gives more control over the intermediate steps of the animation sequence than transitions.
 
@@ -64,9 +67,11 @@ If you use percentages from 0% to 100%
 }
 ```
 
+
 Specify when the style change will happen in percent, or with the keywords "from" and "to",
 which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the
 animation is complete.
+
 
 #### Also we can use from and to with percentage like
 
@@ -78,11 +83,7 @@ animation is complete.
 }
 ```
 
->> The !important rule is ignored in a keyframe
-- hi
 > The !important rule is ignored in a keyframe
 
-- hi
-<!--  hohihi -->
 
 
