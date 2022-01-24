@@ -98,9 +98,7 @@ transition-timing-function have some property like:
 
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/tran1.gif)
 
-You see defirint now!
-
-
+You see the difference now
 
 
 
