@@ -1,5 +1,14 @@
-# CSS Transitions
+# Intro 
 
+In this section you will learn about the CSS:
+
+* Transition.
+* Transform.
+* Animation.
+* Animation with JS.
+
+
+# CSS Transitions
 
 CSS transitions allows you to change property values smoothly, over a given duration.
 
@@ -10,12 +19,11 @@ Animations that involve transitioning between two states are often called implic
 How to Use CSS Transitions?
 To create a transition effect, you must specify two things:
 
-the CSS property you want to add an effect to
-the duration of the effect
+The CSS property you want to add an effect to the duration of the effect.
 Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
 
+How use it?
 
-how use it
 ```css
     .class{
         font-size: 1.1rem;
@@ -26,19 +34,19 @@ how use it
     }
 ```
 
-- property: name property or all for give all properties
-- duration:  
-- timing function:  
-- delay:  
+- property: ```name property``` or ```all``` for give all properties.
+- duration:  how long the transition will last.
+- timing function: how the transition will run.
+- delay: when the animation will start.
 
 
-we can write all this rules in one line 
+We can write all this rules in one line.
 
 ```css
     transition: <property> <duration> <timing-function> <delay>;
 ```
 
-example
+Example
 ```css
    .class{
         font-size: 1.1rem;
@@ -46,11 +54,11 @@ example
     }
 ```
 
-transition-timing-function have some property like:
+```transition-timing-function``` has some property like:
 
 | Property        | Description     | 
 | ------------- |:-------------:|
-| ease |  specifies a transition effect with a slow start, then fast, then end slowly (this is default) | 
+| ease |  specifies a transition effect with a slow start, then fast, then end slowly (default) | 
 | linear|  specifies a transition effect with the same speed from start to end | 
 | ease-in|   specifies a transition effect with a slow start | 
 | ease-out|  specifies a transition effect with a slow end | 
@@ -60,7 +68,7 @@ transition-timing-function have some property like:
 
 
 
-## example
+## Example
 
 
 ```html
@@ -96,9 +104,20 @@ transition-timing-function have some property like:
 
 ```
 
-![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/tran1.gif)
+![example use transition with hover](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/tran1.gif)
+
 
 You see the difference now
+
+
+
+## Task Transition:
+
+Write this code.
+
+![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/task_1.gif)
+
+
 
 
 
@@ -110,9 +129,9 @@ The transform property applies a 2D or 3D transformation to an element.
 The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
 
 
-Property Transform
+Property Transform:
 
-- rotate: Defines a rotation, the angle is specified in the parameter
+- rotate: Defines a rotation, the angle is specified in the parameter.
 
 ```css
     .class_1{
@@ -128,8 +147,9 @@ Property Transform
 
 
 
-- translate: Defines a translation
+- translate: Defines a translation.
 
+Look at this code, it's normal.
 
 ```html
     <div class="wrapper">
@@ -169,10 +189,14 @@ Property Transform
         justify-content: center;
     }
 ```
+
+This is the result of the above code
+
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/befpre%20tra.PNG)
 
 
-but if we use transform translate then will add 
+If we use ```translate``` then will add.
+
 
 ```css
     .card_1 {
@@ -189,14 +213,16 @@ but if we use transform translate then will add
 
 ```
 
+This is a result after doing something like offset for the elements.
+
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/after%20tra.PNG)
 
 
-- scale:   Defines a scale transformation	
+- scale: Defines a scale transformation.
 
 ```css
     .card_1 {
-         transform: scale(0.7);
+         transform: scale(0.5);
     }
 
     .card_2 {
@@ -212,7 +238,7 @@ but if we use transform translate then will add
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/scale.PNG)
 
 
-- skew:  Defines a 2D skew transformation along the X- and the Y-axis	
+- skew:  Defines a 2D skew transformation along the X- and the Y-axis.	
 
 
 ```css
@@ -233,7 +259,7 @@ but if we use transform translate then will add
 
 
 
-we can write more property with same line
+### We can write more property with same line
 ```css
     .card_2{
         transform: translateY(100px) rotate(45deg) scale(1.5);
@@ -241,6 +267,14 @@ we can write more property with same line
 ```
 
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/mores.PNG)
+
+
+## Task Transform:
+
+Write this code.
+
+![task 2](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/task_2.gif)
+
 
 
 
@@ -251,7 +285,6 @@ we can write more property with same line
 CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.
 
 
-
 ### The animation property is a shorthand property for:
 
 | Property        | Description     | 
@@ -259,31 +292,69 @@ CSS animations make it possible to animate transitions from one CSS style config
 | animation-name      |  Specifies the name of the keyframe you want to bind to the selector | 
 | animation-duration     | Specifies how many seconds or milliseconds an animation takes to complete      |  
 | animation-timing-function | Specifies the speed curve of the animation      |   
-| animation-delay | Specifies a delay before the animation will start      |   
+| animation-delay | Specifies a delay before the animation will start  |   
 | animation-iteration-count | Specifies how many times an animation should be played      |   
 | animation-direction | Specifies whether or not the animation should play in reverse on alternate cycles      |   
 | animation-fill-mode | Specifies what values are applied by the animation outside the time it is executing      |   
-| animation-play-state | Specifies whether the animation is running or paused      |   
+| animation-play-state | Specifies whether the animation is running or paused |   
+
+### Example
+
+```css
+    .class{
+        animation-name: anyName;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: 3;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+    }
+```
 
 
-### then we can write this in one line, how?
+### Then we can write this in one line, how?
  
 animation: name duration timing-function delay iteration-count direction fill-mode;
 
 Example: 
 ```css
-animation: nameAnimation 0.5s ease-in-out;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+```
+Example: 
+```css
+    .class{
+        animation: anyName  0.7s ease-in-out 1s 3 reverse forwards;
+    }
 ```
 
+- ```animation-direction```
+
+```css
+animation-direction: normal;
+animation-direction: reverse; /* The animation plays backwards. the animation will reset to the end state and start over again. */
+animation-direction: alternate; /* The animation reverses direction each cycle, with the first iteration being played forwards. */
+animation-direction: alternate-reverse; /* The animation reverses direction each cycle, with the first iteration being played backwards. */
+```
+
+- ```animation-fill-mode```
+```css
+animation-fill-mode: none;
+animation-fill-mode: forwards; /* The target will retain the computed values set by the last keyframe encountered during execution. */
+animation-fill-mode: backwards; /* The element will get the style values that is set by the first keyframe and retain this during the animation-delay period */
+animation-fill-mode: both; /*  The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions */
+```
 
 #### And when we use animation then we use keyframes with it
-#### what keyframes?
+### What keyframes?
 
 
 The @keyframes controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. This gives more control over the intermediate steps of the animation sequence than transitions.
 
 Example: 
 If use from and to.
+
 ```css
 @keyframes nameAnimation {
   from {
@@ -428,7 +499,7 @@ then we can write code like this:
 }
 ```
 
-task for you make this animation like this:
+Task for you make this animation like this(Delay):
 
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/ani2-slow.gif)
 
@@ -449,7 +520,7 @@ task for you make this animation like this:
         </div>
 
         <div class="info animate">
-            <span>Loerm100</span>
+            <span>Lorem100</span>
         </div>
     </div>
 
@@ -563,7 +634,7 @@ In default animation is auto play like this line but we dont write it
     animation-play-state: running;
 ```
 
-but if we want stop animation just write this rule with value ```pause```
+But if we want stop animation just write this rule with value ```pause```
 ```css
     animation-play-state: pause;
 ```
@@ -577,7 +648,7 @@ and with first example update to below
 
 How we did it?
 
-first we add two btns and with ```onclick``` call his function
+First we add two btns and with ```onclick``` call his function
 
 ```html
 
@@ -606,8 +677,15 @@ and js call element and funcations:
 
 
 
-## Animation with scrolling
+## Task Animation:
 
+Write this code.
+
+![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/task_3.gif)
+
+
+
+## Animation with scrolling
 
 
 It is known that the animation is executed automatically when the page is opened, which means that all animations will be executed all the page.
@@ -629,7 +707,7 @@ Intersection Observer is a really awesome JavaScript API that simplifies scroll-
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/observ.gif)
 
 
-in this gif we change second section background from red to blue i think hhhhhh :)
+In this gif we change second section background from red to blue i think hhhhhh :)
 and same time add animation for image 
 
 - html
