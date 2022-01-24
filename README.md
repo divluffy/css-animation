@@ -311,8 +311,6 @@ CSS animations make it possible to animate transitions from one CSS style config
 
 ### Then we can write this in one line, how?
  
-animation: name duration timing-function delay iteration-count direction fill-mode;
-
 Example: 
 ```css
     animation: name duration timing-function delay iteration-count direction fill-mode;
