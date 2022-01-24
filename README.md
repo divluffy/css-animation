@@ -696,8 +696,6 @@ What is Intersection Observer?
 Intersection Observer is a really awesome JavaScript API that simplifies scroll-based events in JavaScript. Rather than constantly checking the distance from the top, Intersection Observer watches when an element enters or exits the viewport. It’s really that simple, and you can create features such as scroll animations, lazy loading images, inserting new elements into the DOM, and triggering notifications.
 
 
-
-
 ![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/observ.gif)
 
 
@@ -792,6 +790,7 @@ and same time add animation for image
     
     const observer = new IntersectionObserver(callback, {
         root: null,
+        rootMargin: '0px',
         threshold: 0.7,
     });
 
@@ -799,4 +798,8 @@ and same time add animation for image
 
 
 ```
+- ```intersectionRatio```: a number between 0 and 1 (both inclusive) to indicate the ratio of the intersection between the target and the root.
+- ```root```: The ancestor element/viewport that the observed element will intersect. Think of it as the train station that the train will intersect.
+- ```rootMargin```:A perimeter of the root element, shrinking or growing the root element’s area to watch out for intersection. It’s similar to the CSS margin property.
+- ```threshold```: An array of values (between 0 and 1.0), each representing the distance an element has intersected into or crossed over in the root at which the callback is to be triggered.
 
