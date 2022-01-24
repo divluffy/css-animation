@@ -121,12 +121,11 @@ Write this code.
 
 
 
-CSS transform
+# CSS transform
 
 The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
 
-
-Property Transform:
+Properties Transform:
 
 - rotate: Defines a rotation, the angle is specified in the parameter.
 
