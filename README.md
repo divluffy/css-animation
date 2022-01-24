@@ -326,10 +326,10 @@ Example:
 - ```animation-direction```
 
 ```css
-animation-direction: normal;
-animation-direction: reverse; /* The animation plays backwards. the animation will reset to the end state and start over again. */
-animation-direction: alternate; /* The animation reverses direction each cycle, with the first iteration being played forwards. */
-animation-direction: alternate-reverse; /* The animation reverses direction each cycle, with the first iteration being played backwards. */
+animation-direction: normal; /*  Forward direction, this is the default value.  */
+animation-direction: reverse; /* The animation sets in the reverse direction ( backward ). */
+animation-direction: alternate; /*  The animation plays normal first and then reverse.  */
+animation-direction: alternate-reverse; /* The animation plays reverse first and then normal. */
 ```
 
 - ```animation-fill-mode```
