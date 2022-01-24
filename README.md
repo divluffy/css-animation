@@ -798,8 +798,11 @@ and same time add animation for image
 
 
 ```
-- ```intersectionRatio```: a number between 0 and 1 (both inclusive) to indicate the ratio of the intersection between the target and the root.
-- ```root```: The ancestor element/viewport that the observed element will intersect. Think of it as the train station that the train will intersect.
-- ```rootMargin```:A perimeter of the root element, shrinking or growing the root element’s area to watch out for intersection. It’s similar to the CSS margin property.
-- ```threshold```: An array of values (between 0 and 1.0), each representing the distance an element has intersected into or crossed over in the root at which the callback is to be triggered.
+- ```intersectionRatio```:  A number between 0 and 1 (both inclusive) to indicate the ratio of the intersection between the target and the root.
+
+- ```root```:  The ancestor element/viewport that the observed element will intersect. Think of it as the train station that the train will intersect.
+
+- ```rootMargin```:  A perimeter of the root element, shrinking or growing the root element’s area to watch out for intersection. It’s similar to the CSS margin property.
+
+- ```threshold```:  An array of values (between 0 and 1.0), each representing the distance an element has intersected into or crossed over in the root at which the callback is to be triggered.
 
