@@ -620,3 +620,113 @@ When the user initially scrolls down and makes a scroll, no animation will be ex
 
 The solution is when the user reaches a certain section, then the animation is executed, then here we use js observe().
 
+
+
+What is Intersection Observer?
+Intersection Observer is a really awesome JavaScript API that simplifies scroll-based events in JavaScript. Rather than constantly checking the distance from the top, Intersection Observer watches when an element enters or exits the viewport. It’s really that simple, and you can create features such as scroll animations, lazy loading images, inserting new elements into the DOM, and triggering notifications.
+
+
+
+
+![task 1](https://raw.githubusercontent.com/divluffy/css-animation/main/assets/observ.gif)
+
+
+in this gif we change second section background from red to blue i think hhhhhh :)
+and same time add animation for image 
+
+- html
+
+```html
+    <section class="section">
+        <h1>Animation</h1>
+    </section>
+
+    <section class="box_image">
+        <div class="image">
+            <img src="#link image">
+        </div>
+    </section>
+
+```
+
+- css
+
+```css
+    .section {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(202, 202, 202);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_image {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(255, 52, 52);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .image {
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .image img {
+        width: 400px;
+        height: 50px;
+        opacity: 0;
+        object-fit: cover;
+    }
+
+    .box_image.active  .image img{
+        animation:  image 1s ease-in forwards 0.1s,
+                    image2 1s ease-in-out forwards 2s;
+    }
+
+    @keyframes image {
+        100% {
+            height: 600px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes image2 {
+        100% {
+            transform: scale(1.4) rotate(10deg) translateY(40px);
+        }
+    }
+
+```
+
+- js
+
+```js
+
+    const sectionToAnimation = document.querySelector('.box_image');
+
+    const callback = function (entries) {
+    
+        let { intersectionRatio } = entries[0]
+        if (intersectionRatio > 0 ) {
+            // add this rules to this section if the user sees it now
+            entries[0].target.style.background = 'rgb(212, 219, 255)'
+            entries[0].target.classList.add('active')
+        }
+        
+    };
+    
+    const observer = new IntersectionObserver(callback, {
+        root: null,
+        threshold: 0.7,
+    });
+
+    observer.observe(sectionToAnimation);
+
+
+```
+
